@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body, html{
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit';
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    img{
+      width: 240px;
+      height: 240px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    #container{
+      display: flex;
+      background-color: hsl(0, 0%, 100%);
+      flex-direction: column;
+      align-items: center;
+      width: 270px;
+      height: 420px;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .text-box{
+      width: 230px;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 5px;
+    }
+    .text1{
+      color: hsl(218, 44%, 22%);
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .text2{
+      color: hsl(220, 15%, 55%);
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="image">
+      <img src="./images/image-qr-code.png">
+    </div>
+    <div class="text-box">
+      <div class="text1">Improve your front-end skills by building projects</div>
+      <div class="text2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/lcshub">Lucas da Costa Silva</a>.
+  </div>
+</body>
+</html>
